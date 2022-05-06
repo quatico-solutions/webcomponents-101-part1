@@ -1,4 +1,4 @@
-import imgUrl from "../resources/tony-and-iron.png";
+import imgUrl from "../resources/super-tony.jpg";
 
 export const createTestimonial = (): HTMLElement => {
     const result = document.createElement("div");

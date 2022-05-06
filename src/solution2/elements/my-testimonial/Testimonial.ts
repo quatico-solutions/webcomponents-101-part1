@@ -1,6 +1,6 @@
 import { css, html, LitElement, TemplateResult, unsafeCSS } from "lit";
 import { customElement } from "lit/decorators.js";
-import imgUrl from "../../resources/tony-and-iron.png";
+import imgUrl from "../../resources/super-tony.jpg";
 
 import styleText from "./my-testimonial.css";
 
