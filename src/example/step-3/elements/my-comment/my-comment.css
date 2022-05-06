@@ -1,0 +1,28 @@
+:host {
+    padding: 0px 10px;
+    font-family: var(--text-font);
+    color: var(--para-text);
+    font-size: calc(var(--width) / 50);
+}
+
+.header {
+    background: lightgray;
+    padding: 10px 10px 0 10px;
+}
+
+.date {
+    font-size: calc(var(--width) / 70);
+    display: block;
+}
+
+.title {
+    color: var(--title);
+    text-transform: capitalize;
+    font-family: var(--title-font);
+    font-size: calc(var(--width) / 40);
+}
+
+.content {
+    padding: 10px;
+    background: #f1f1f1;
+}

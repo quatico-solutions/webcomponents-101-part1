@@ -1,0 +1,3 @@
+.comments h2 {
+    font-size: calc(var(--width) / 30);
+}

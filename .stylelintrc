@@ -1,0 +1,12 @@
+{
+    "plugins": ["stylelint-selector-bem-pattern", "stylelint-scss"],
+    "extends": ["stylelint-config-recommended", "stylelint-config-recommended-scss"],
+    "rules": {
+        "indentation": 4,
+        "plugin/selector-bem-pattern": {
+            "preset": "bem",
+            "utilitySelectors": "^\\.(u|l)-[a-z]+$",
+            "ignoreSelectors": []
+        }
+    }
+}

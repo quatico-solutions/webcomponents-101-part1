@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACME Webapp</title>
+        <template id="my-hello-template">
+            <div class="hello">
+                <h1 id="title" class="hello__title">Hello, World!</h1>
+                <div id="content" class="hello__content"></div>
+                <button id="button" class="hello__button">Try me: 0</button>
+            </div>
+        </template>
+        <template id="my-testimonial-template">
+            <div class="testimonial">
+                <figure id="figure" class="testimonial__figure">
+                    <img class="testimonial__image" alt="Tony Quark" src="/tony-and-iron.png" />
+                    <div class="testimonial__text">
+                        <q class="testimonial__quote">
+                            Transforming everyday CEO's into superheroes. But for web components. That's what webbloqs
+                            are all about.
+                        </q>
+                        <figcaption class="testimonial__caption">Tony Quark, CEO of Q-Industries</figcaption>
+                        <a id="link" class="testimonial__link" href="https://webbloqs.io/">Explore webbloqs</a>
+                    </div>
+                </figure>
+            </div>
+        </template>
+    </head>
+    <body>
+        <my-hello name="Cowboy"><p>It's a brave new world out there. At least it better be.</p></my-hello>
+        <my-testimonial> </my-testimonial>
+        <script type="module" src="/index.ts"></script>
+    </body>
+</html>

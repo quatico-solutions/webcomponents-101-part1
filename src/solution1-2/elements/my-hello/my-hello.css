@@ -1,0 +1,28 @@
+:host {
+    display: block;
+    padding: var(--my-ds-size--lg);
+    max-width: var(--my-ds-max-width);
+}
+
+h1 {
+    font-size: var(--my-ds-size--2xl);
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+::slotted(p) {
+    font-size: var(--my-ds-size--xl);
+    color: var(--my-ds-color--dark);
+    margin-top: 0;
+}
+
+button {
+    background-color: var(--my-ds-color--dark);
+    border-radius: var(--my-ds-border-radius--sm);
+    border: none;
+    color: var(--my-ds-color--white);
+    cursor: pointer;
+    font-size: var(--my-ds-size--lg);
+    padding: var(--my-ds-size--xs) var(--my-ds-size--lg);
+}

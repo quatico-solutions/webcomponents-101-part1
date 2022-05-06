@@ -1,0 +1,56 @@
+:host {
+    display: block;
+    padding: var(--my-ds-size--lg);
+    max-width: var(--my-ds-max-width);
+    font-family: var(--my-ds-font-family--default);
+}
+
+figure {
+    background-color: var(--my-ds-color--light);
+    border-radius: var(--my-ds-border-radius--lg);
+    border: 1px solid  var(--my-ds-color--dark);
+    box-shadow: 10px 5px 5px var(--my-ds-color--dark);
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+figure:hover {
+    background-color: var(--my-ds-color--light);
+    filter: brightness(90%);
+}
+
+figure:active {
+    box-shadow: 5px 2px 5px var(--my-ds-color--dark);
+}
+
+figure img {
+    width: var(--my-ds-size--3xl);
+}
+
+figure > div {
+    padding: 20px 20px 0 20px;
+
+}
+
+figure > div > * {
+    margin-bottom: var(--my-ds-size--xl);
+}
+
+figure > div > q {
+    font-family: var(--my-ds-font-family--quote);
+    font-size: var(--my-ds-size--xl);
+    font-weight: bold;
+    font-style: italic;
+}
+
+figure > div > figcaption {
+    font-size: var(--my-ds-size--3xs);
+    font-style: italic;
+}
+figure a {
+    color: var(--my-ds-color--blue);
+    text-decoration: none;
+}

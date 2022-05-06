@@ -1,0 +1,85 @@
+{
+    "name": "@quatico/webcomponents-101-part1",
+    "private": true,
+    "license": "SEE LICENSE IN LICENSE",
+    "version": "0.0.1",
+    "main": "dist/webcomponents-101-part1.es.js",
+    "exports": {
+        ".": "./dist/webcomponents-101-part1.es.js"
+    },
+    "types": "types/webcomponents-101-part1.d.ts",
+    "files": [
+        "LICENSE",
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rimraf dist lib coverage",
+        "lint": "concurrently \"yarn lint:scripts\" \"yarn lint:styles\"",
+        "lint:scripts": "eslint \"{src,test}/**/*.{js,ts,tsx}\" --fix",
+        "lint:styles": "stylelint \"src/**/*.{css,scss}\"",
+        "run:mdn-examples": "vite --config src/mdn-examples/vite.config.ts",
+        "run:example-step-0": "vite --config src/example/step-0/vite.config.ts",
+        "run:example-step-1": "vite --config src/example/step-1/vite.config.ts",
+        "run:example-step-2": "vite --config src/example/step-2/vite.config.ts",
+        "run:example-step-3": "vite --config src/example/step-3/vite.config.ts",
+        "run:example-step-4": "vite --config src/example/step-4/vite.config.ts",
+        "run:exercise1": "vite --config src/exercise1/vite.config.ts",
+        "run:exercise2": "vite --config src/exercise2/vite.config.ts",
+        "run:solution1-1": "vite --config src/solution1-1/vite.config.ts",
+        "run:solution1-2": "vite --config src/solution1-2/vite.config.ts",
+        "run:solution2": "vite --config src/solution2/vite.config.ts",
+        "build": "yarn clean && yarn lint && tsc && yarn build:all",
+        "build:all": "yarn build:mdn-examples && yarn build:example-step-0 && yarn build:example-step-1 && yarn build:example-step-2 && yarn build:example-step-3 && yarn build:example-step-4 && yarn build:exercise1 && yarn build:exercise2 && yarn build:solution1-1 && yarn build:solution1-2 && yarn build:solution2",
+        "build:mdn-examples": "vite build --config src/mdn-examples/vite.config.ts",
+        "build:example-step-0": "vite build --config src/example/step-0/vite.config.ts",
+        "build:example-step-1": "vite build --config src/example/step-1/vite.config.ts",
+        "build:example-step-2": "vite build --config src/example/step-2/vite.config.ts",
+        "build:example-step-3": "vite build --config src/example/step-3/vite.config.ts",
+        "build:example-step-4": "vite build --config src/example/step-4/vite.config.ts",
+        "build:exercise1": "vite build --config src/exercise1/vite.config.ts",
+        "build:exercise2": "vite build --config src/exercise2/vite.config.ts",
+        "build:solution1-1": "vite build --config src/solution1-1/vite.config.ts",
+        "build:solution1-2": "vite build --config src/solution1-2/vite.config.ts",
+        "build:solution2": "vite build --config src/solution2/vite.config.ts"
+    },
+    "dependencies": {
+        "lit": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "@typescript-eslint/eslint-plugin": "^5.19.0",
+        "@typescript-eslint/parser": "^5.19.0",
+        "concurrently": "7.1.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^26.1.4",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-testing-library": "^5.3.1",
+        "eslint": "^8.13.0",
+        "husky": "7.0.4",
+        "jest": "^27.3.1",
+        "lint-staged": "12.3.8",
+        "postcss": "^8.4.12",
+        "prettier": "2.6.2",
+        "rimraf": "3.0.2",
+        "sass": "^1.50.0",
+        "stylelint-config-recommended-scss": "6.0.0",
+        "stylelint-config-recommended": "^7.0.0",
+        "stylelint-scss": "4.2.0",
+        "stylelint-selector-bem-pattern": "^2.1.0",
+        "stylelint": "^14.7.0",
+        "ts-jest": "^27.1.4",
+        "typescript": "^4.6.3",
+        "vite": "^2.9.5"
+    },
+    "lint-staged": {
+        "*.(js|ts|tsx|jsx)": [
+            "yarn run lint",
+            "git add"
+        ]
+    },
+    "engines": {
+        "node": ">=16",
+        "yarn": ">=1.22 < 2"
+    }
+}
