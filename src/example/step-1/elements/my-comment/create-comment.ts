@@ -9,13 +9,11 @@ export const createComment = ({ date, title, author, content }: Comment): HTMLEl
 };
 
 const createHeader = ({ date, title, author }: Partial<Comment>): HTMLElement => {
-    const header = createElement("div", "header");
-    header.appendChild(createElement("div", "date", date));
-    header.appendChild(createElement("span", "title", title));
-    header.appendChild(createElement("span", "author", ` by ${author}`));
-    return header;
+    const result = createElement("div", "header");
+    result.appendChild(createElement("div", "date", date));
+    result.appendChild(createElement("span", "title", title));
+    result.appendChild(createElement("span", "author", ` by ${author}`));
+    return result;
 };
 
-const createContent = (content: string): HTMLElement => {
-    return createElement("div", "content", content);
-};
+const createContent = (content: string) => createElement("div", "content", content);
