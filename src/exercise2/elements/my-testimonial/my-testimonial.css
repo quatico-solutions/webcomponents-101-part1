@@ -8,7 +8,7 @@
 figure {
     background-color: var(--my-ds-color--light);
     border-radius: var(--my-ds-border-radius--lg);
-    border: 1px solid  var(--my-ds-color--dark);
+    border: 1px solid var(--my-ds-color--dark);
     box-shadow: 10px 5px 5px var(--my-ds-color--dark);
     cursor: pointer;
     display: flex;
@@ -31,8 +31,7 @@ figure img {
 }
 
 figure > div {
-    padding: 20px 20px 0 20px;
-
+    padding: 20px;
 }
 
 figure > div > * {
