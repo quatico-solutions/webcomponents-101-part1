@@ -28,8 +28,7 @@
         "run:solution1-1": "vite --config src/solution1-1/vite.config.ts",
         "run:solution1-2": "vite --config src/solution1-2/vite.config.ts",
         "run:solution2": "vite --config src/solution2/vite.config.ts",
-        "build": "yarn clean && yarn lint && tsc && yarn build:all",
-        "build:all": "yarn build:mdn-examples && yarn build:example-step-0 && yarn build:example-step-1 && yarn build:example-step-2 && yarn build:example-step-3 && yarn build:example-step-4 && yarn build:exercise1 && yarn build:exercise2 && yarn build:solution1-1 && yarn build:solution1-2 && yarn build:solution2",
+        "build": "yarn build:mdn-examples && yarn build:example-step-0 && yarn build:example-step-1 && yarn build:example-step-2 && yarn build:example-step-3 && yarn build:example-step-4 && yarn build:exercise1 && yarn build:exercise2 && yarn build:solution1-1 && yarn build:solution1-2 && yarn build:solution2",
         "build:mdn-examples": "vite build --config src/mdn-examples/vite.config.ts",
         "build:example-step-0": "vite build --config src/example/step-0/vite.config.ts",
         "build:example-step-1": "vite build --config src/example/step-1/vite.config.ts",
@@ -51,7 +50,8 @@
         "test:solution1-1": "jest --runInBand --testPathPattern=solution1-1",
         "test:solution1-2": "jest --runInBand --testPathPattern=solution1-2",
         "test:solution2": "jest --runInBand --testPathPattern=solution2",
-        "test:watch": "jest --watch"
+        "test:watch": "jest --watch",
+        "dist": "yarn clean && yarn lint && yarn test && yarn build"
     },
     "dependencies": {
         "lit": "^2.0.2"
