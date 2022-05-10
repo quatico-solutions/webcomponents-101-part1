@@ -1,4 +1,4 @@
-import { MyComment } from "./my-comment";
-import { MyCommentList } from "./my-comment-list";
+import { Comment } from "./my-comment";
+import { CommentList } from "./my-comment-list";
 
-export { MyComment, MyCommentList };
+export { Comment, CommentList };

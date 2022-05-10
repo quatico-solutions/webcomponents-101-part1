@@ -5,7 +5,7 @@ import { customElement, property } from "lit/decorators.js";
 import styleText from "./my-comment.css";
 
 @customElement("my-comment")
-export class MyComment extends LitElement {
+export class Comment extends LitElement {
     static styles = css`
         ${unsafeCSS(styleText)}
     `;

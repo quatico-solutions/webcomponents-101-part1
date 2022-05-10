@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-export class MyComment extends HTMLElement {
+export class Comment extends HTMLElement {
     constructor() {
         super();
         this.className = "comment";
@@ -18,3 +18,5 @@ export class MyComment extends HTMLElement {
         }
     }
 }
+
+customElements.define("my-comment", Comment);

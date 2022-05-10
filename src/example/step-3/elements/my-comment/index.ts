@@ -1,3 +1,3 @@
-import { MyComment } from "./MyComment";
+import { Comment } from "./Comment";
 
-export { MyComment };
+export { Comment };

@@ -2,7 +2,7 @@
 
 import styleText from "./my-comment.css";
 
-export class MyComment extends HTMLElement {
+export class Comment extends HTMLElement {
     constructor() {
         super();
     }
@@ -25,3 +25,5 @@ export class MyComment extends HTMLElement {
         }
     }
 }
+
+customElements.define("my-comment", Comment);
