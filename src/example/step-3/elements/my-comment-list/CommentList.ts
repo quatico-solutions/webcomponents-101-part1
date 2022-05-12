@@ -10,7 +10,7 @@ export class CommentList extends HTMLElement {
         if (template) {
             this.appendChild(document.importNode(template, true));
         }
-        const comments = JSON.parse(decodeURIComponent(this.getAttribute("data-comments") || "[]")) as Comment[];
+        const comments = JSON.parse(this.getAttribute("data-comments") ?? "[]") as Comment[];
 
         // Loop through each of the comments and add them to the comments section
         const section = document.querySelector("#comments-section");

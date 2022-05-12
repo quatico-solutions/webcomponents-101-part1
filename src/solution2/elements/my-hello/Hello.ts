@@ -24,11 +24,11 @@ export class Hello extends LitElement {
         return html`
             <h1>Hello, ${this.name}!</h1>
             <slot></slot>
-            <button @click=${this.onClick}>Try me: ${this.count}</button>
+            <button @click=${this.handleClick}>Try me: ${this.count}</button>
         `;
     }
 
-    private onClick() {
+    private handleClick() {
         this.count++;
     }
 }

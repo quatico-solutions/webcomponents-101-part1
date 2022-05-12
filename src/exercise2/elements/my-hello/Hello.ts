@@ -26,12 +26,12 @@ export class Hello extends HTMLElement {
 
             const title = element.querySelector("#title");
             if (title) {
-                title.innerHTML = `Hello, ${this.name}`;
+                title.innerHTML = `Hello, ${this.getAttribute("name") ?? this.name}`;
             }
             const button = element.querySelector("#button");
             if (button) {
-                button.innerHTML = `Try me: ${this.count}`;
-                button.addEventListener("click", this.onClick.bind(this));
+                button.innerHTML = `Try me: ${this.getAttribute("count") ?? this.count}`;
+                button.addEventListener("click", this.handleClick.bind(this));
             }
 
             shadow.appendChild(style);
@@ -39,7 +39,7 @@ export class Hello extends HTMLElement {
         }
     }
 
-    private onClick() {
+    private handleClick() {
         const button = this.shadowRoot?.querySelector("button");
         if (button) {
             button.innerHTML = `Try me: ${++this.count}`;

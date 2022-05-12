@@ -5,40 +5,6 @@
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MDN Examples</title>
-        <style>
-            ul {
-                list-style-type: none;
-            }
-
-            li::before {
-                display: inline-block;
-                width: 1rem;
-                height: 1rem;
-                margin-right: 0.25rem;
-                content: "";
-            }
-
-            .open::before,
-            .closed::before {
-                background-size: 1rem 1rem;
-                position: relative;
-                top: 0.25rem;
-                opacity: 0.3;
-            }
-
-            .open::before {
-                background-image: url(/down.png);
-            }
-
-            .closed::before {
-                background-image: url(/right.png);
-            }
-
-            .closed .closed::before,
-            .closed .open::before {
-                display: none;
-            }
-        </style>
     </head>
     <body>
         <h1>MDN Examples</h1>

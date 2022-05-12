@@ -21,21 +21,19 @@ describe("CommentList", () => {
         `;
 
         const testObj = await fixture(
-            `<my-comment-list data-comments='${encodeURIComponent(
-                JSON.stringify([
-                    {
-                        author: "Expected author",
-                        content: "Expected content",
-                        date: "Expected date",
-                        title: "Expected title",
-                    },
-                ])
-            )}'></my-comment-list>`
+            `<my-comment-list data-comments='${JSON.stringify([
+                {
+                    author: "Expected author",
+                    content: "Expected content",
+                    date: "Expected date",
+                    title: "Expected title",
+                },
+            ])}'></my-comment-list>`
         );
 
         expect(testObj).toMatchInlineSnapshot(`
             <my-comment-list
-                data-comments="%5B%7B%22author%22%3A%22Expected%20author%22%2C%22content%22%3A%22Expected%20content%22%2C%22date%22%3A%22Expected%20date%22%2C%22title%22%3A%22Expected%20title%22%7D%5D"
+                data-comments="[{"author":"Expected author","content":"Expected content","date":"Expected date","title":"Expected title"}]"
             >
                 <section
                     class="comments"

@@ -8,9 +8,9 @@ loadData()
     .then((comments: Comment[]) => {
         const article = document.querySelector<HTMLElement>("#article");
         if (article) {
-            article.innerHTML += `<my-comment-list data-comments='${encodeURIComponent(
-                JSON.stringify([comments[0]]) // All comments are to long to be transported by a single attribute
-            )}'></my-comment-list>`;
+            const element = document.createElement("my-comment-list");
+            element.setAttribute("data-comments", JSON.stringify(comments));
+            article.appendChild(element);
         }
     })
     .catch(error => console.error(error));

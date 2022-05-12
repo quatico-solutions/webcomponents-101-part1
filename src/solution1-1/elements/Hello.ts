@@ -6,10 +6,6 @@ export class Hello extends HTMLElement {
     public name = "World";
     public count = 0;
 
-    constructor() {
-        super();
-    }
-
     public connectedCallback() {
         const element = document
             .querySelector<HTMLTemplateElement>("#my-hello-template")
@@ -21,8 +17,8 @@ export class Hello extends HTMLElement {
             }
             const button = element.querySelector("#button");
             if (button) {
-                button.innerHTML = `Try me: ${this.count}`;
-                button.addEventListener("click", this.onClick.bind(this));
+                button.innerHTML = `Try me: ${this.getAttribute("count") ?? this.count}`;
+                button.addEventListener("click", this.handleClick.bind(this));
             }
 
             const content = element.querySelector("#content");
@@ -35,7 +31,7 @@ export class Hello extends HTMLElement {
         }
     }
 
-    private onClick() {
+    private handleClick() {
         const button = this?.querySelector("#button");
         if (button) {
             button.innerHTML = `Try me: ${++this.count}`;

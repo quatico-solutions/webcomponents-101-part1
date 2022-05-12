@@ -10,7 +10,7 @@ module.exports = {
     },
     moduleFileExtensions: ["ts", "js", "json", "node"],
     moduleNameMapper: {
-        "\\.(css|less|sass|scss)$": "<rootDir>/test/helper/styleMock.ts",
+        "\\.(css|less|sass|scss|jpg)$": "<rootDir>/test/helper/styleMock.ts",
     },
     snapshotSerializers: ["@quatico/dom-serializer/bin/serializer"],
     testRegex: ".*spec\\.(js|ts)$",

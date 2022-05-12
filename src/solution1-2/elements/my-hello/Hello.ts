@@ -20,12 +20,12 @@ export class Hello extends HTMLElement {
             <style>${styleText}</style>
             <h1>Hello, ${this.getAttribute("name") ?? this.name}!</h1>
             <slot></slot>
-            <button>Try me: ${this.count}</button>
+            <button>Try me: ${this.getAttribute("count") ?? this.count}</button>
         `;
-        shadow.querySelector("button")?.addEventListener("click", this.onClick.bind(this));
+        shadow.querySelector("button")?.addEventListener("click", this.handleClick.bind(this));
     }
 
-    private onClick() {
+    private handleClick() {
         const button = this.shadowRoot?.querySelector("button");
         if (button) {
             button.innerHTML = `Try me: ${++this.count}`;

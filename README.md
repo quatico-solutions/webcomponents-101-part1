@@ -45,7 +45,8 @@ Run the code for an individual exercise or solution using `yarn run:exercise-nam
 * `run:example-step-4`:  Run script files for example step 4.
 * `run:exercise1`:  Run script files for exercise 1.
 * `run:exercise2`:  Run script files for exercise 2.
-* `run:solution1`:  Run script files for solution 1.
+* `run:solution1-1`:  Run script files for solution 1-1.
+* `run:solution1-2`:  Run script files for solution 1-2.
 * `run:solution2`:  Run script files for solution 2.
 
 Run Jest to test the code for an individual exercise or solution using `yarn test:exercise-name` or `yarn test:solution-name`. For example:
@@ -57,5 +58,6 @@ Run Jest to test the code for an individual exercise or solution using `yarn tes
 * `test:example-step-4`: Run Jest to test all script files for example step 4.
 * `test:exercise1`: Run Jest to test all script files for exercise 1.
 * `test:exercise2`: Run Jest to test all script files for exercise 2.
-* `test:solution1`: Run Jest to test all script files for solution 1.
+* `test:solution1-1`: Run Jest to test all script files for solution 1-1.
+* `test:solution1-2`: Run Jest to test all script files for solution 1-2.
 * `test:solution2`: Run Jest to test all script files for solution 2.
