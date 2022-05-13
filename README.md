@@ -1,4 +1,5 @@
 # webcomponents 101 Part 1: The nature of web-components
+[![Continuous Build](https://github.com/quatico-solutions/webcomponents-101-part1/actions/workflows/continuous-build.yml/badge.svg?event=push)](https://github.com/quatico-solutions/webcomponents-101-part1/actions/workflows/continuous-build.yml)
 
 An introduction to the web components standards for custom elements, the shadow DOM, templates and slots.
 
